@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+    <h1>POLICE DASHBOARD</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+
+<body>
+
+
+
+
+
+<!-- Description -->
+
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1{
+    color: #ff003c;
+}
+
+h2{
+    color: #ff003c;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ffffff;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ffffff;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>THIS POLICE HELPLINE NUMBERS ARE AVAILABLE 24/7</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%; color: #f6ff00;">Police Station</th>
+    <th style="width:40%; color: #f6ff00">Address</th>
+    <th style="width:30%; color: #f6ff00">Contact</th>
+  </tr>
+  <tr>
+    <td>Kharghar Police Station </td>
+    <td>Patel Heritage,sector 7,Kharghar </td>
+    <td>932714514</td>
+  </tr>
+  <tr>
+    <td>Vashi Police Station</td>
+    <td>Near MGM,Sector 3,Vashi</td>
+     <td>965874231</td>
+  </tr>
+   <tr>
+    <td>Nerul Police Station</td>
+    <td>Darave Village,sector 28,Nerul</td>
+     <td>877432641</td>
+  </tr>
+
+  <tr>
+    <td>Rabale Police Station</td>
+    <td>MIDC INDL Area, Rabale</td>
+     <td>789546214</td>
+  </tr>
+  <tr>
+    <td>Kalamboli Police Station</td>
+    <td>Sector 1,Kalamboli,Panvel</td>
+     <td>897256654</td>
+  </tr>
+ <tr>
+    <td>Khandeshwar Police Station</td>
+    <td>Sector 8,Khanda Colony,Greater Khanda,Navi Mumbai</td>
+     <td>987543216</td>
+  </tr>
+
+   <tr>
+    <td>APMC Police Station</td>
+    <td>Groma Marg,Sector 19D,Vashi</td>
+     <td>7895648781</td>
+  </tr>
+
+ <tr>
+    <td>Taloja Police Station</td>
+    <td>MIDC Rd,Near Dena Bank,Taloja</td>
+     <td>925478124</td>
+  </tr>
+ <tr>
+    <td>Panvel Police Station</td>
+    <td>Sai Nagar Road,Old Panvel</td>
+     <td>7458654712</td>
+  </tr>
+ <tr>
+    <td>Kopar Khairane Police Station</td>
+    <td>Ganesh Market,Sector 8,kopar Khairane</td>
+     <td>9587214758</td>
+  </tr>
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

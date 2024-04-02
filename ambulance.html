@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+    <h1>HOSPITAL DASHBOARD</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+
+<body>
+
+
+
+
+
+<!-- Description -->
+
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1{
+    color: #ff003c;
+}
+
+h2{
+    color: #ff003c;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ffffff;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ffffff;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>THE HOSPITAL SERVICES WITH AMBULANCE ARE AVAILABLE 24/7</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%; color: #f6ff00;">Hospital</th>
+    <th style="width:40%; color: #f6ff00">Address</th>
+    <th style="width:30%; color: #f6ff00">Contact</th>
+  </tr>
+  <tr>
+    <td>Apollo Hospitals </td>
+    <td>Parsik Hill Road, Sector 23, CBD Belapur, Navi Mumbai - 400 614 </td>
+    <td>875469872</td>
+  </tr>
+  <tr>
+    <td>JJ Hospital </td>
+    <td>Mohammed Ali Rd, Noor Baug, Mazgaon, Mumbai, Maharashtra 400003</td>
+     <td>848798984</td>
+  </tr>
+   <tr>
+    <td>Lillavati Hospital</td>
+    <td>A-791, A-791, Bandra Reclamation Rd, General Arunkumar Vaidya Nagar, Bandra West, Mumbai, Maharashtra 400050</td>
+     <td>784698741</td>
+  </tr>
+
+  <tr>
+    <td>Cumballa Hill Hospital & Heart Institute</td>
+    <td>93/95 August Kranti Marg</td>
+     <td>987642351</td>
+  </tr>
+  <tr>
+    <td>Dr. L H Hiranandani Hospital</td>
+    <td>Hiranandani Gardens, Powai</td>
+     <td>784898755</td>
+  </tr>
+ <tr>
+    <td>IPC Heart Care Centre </td>
+    <td>Raghuvanshi Mill Compound, Senapati Bapat Marg, Lower Parel</td>
+     <td>874587621</td>
+  </tr>
+
+   <tr>
+    <td>King Edward Memorial Hospital</td>
+    <td>Acharya Donde Marg, Parel</td>
+     <td>7895255546</td>
+  </tr>
+
+ <tr>
+    <td>Asian Heart Institute</td>
+    <td>Bandra Kurla Complex, Bandra (E</td>
+     <td>4874687827</td>
+  </tr>
+ <tr>
+    <td>P. D. Hinduja National Hospital</td>
+    <td>Veer Savarkar Marg, Mahim</td>
+     <td>774569894</td>
+  </tr>
+ <tr>
+    <td>Tata Memorial Hospital </td>
+    <td>Dr. E Borges Road, Parel</td>
+     <td>874879231</td>
+  </tr>
+<tr>
+    <td>Shroff Eye Hospital</td>
+    <td>S. V. Road, Bandra </td>
+     <td>7844687521</td>
+  </tr>
+<tr>
+    <td>Kokilaben Dhirubhai Ambani Hospital</td>
+    <td>Four Bunglows, Andheri (E)</td>
+     <td>578564712</td>
+  </tr>
+
+
+<tr>
+    <td>Nanavati Hospital </td>
+    <td>Vile Parle (W)</td>
+     <td>965874513</td>
+  </tr>
+</table>
+
+
+</table>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

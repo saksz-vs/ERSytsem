@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Response</title>
+    <link rel="stylesheet" type="text/css" href="response.css">
+</head>
+
+<body>
+    
+    
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Response Generated</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="assets/images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="assets/images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="assets/images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="assets/images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="assets/images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Sr no <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Response <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Information <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Details <span class="icon-arrow">&UpArrow;</span></th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="assets/images/user.jpg" alt="">User</td>
+                        <td> Address:Navi-mumbai </td>
+                        <td> contact:987456321</td>
+                        <td>
+                            <p class="status delivered">Send</p>
+                        </td>
+                        <tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td> <img src="assets/images/blood.png" alt="">Blood Group</td>
+                                <td> O+ve </td>
+                                <td> Age: 23</td>
+                                <td>
+                                    <p class="status delivered">Send</p>
+                                </td>
+                                <tr>
+                                    <tr>
+                                        <td> 3 </td>
+                                        <td> <img src="assets/images/infoo.png" alt="">Info</td>
+                                        <td> Gender:Male </td>
+                                        <td> Weight:60kg</td>
+                                        <td>
+                                            <p class="status delivered">Send</p>
+                                        </td>
+                                        <tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> <img src="assets/images/alert.jpg" alt="">Accident Detected</td>
+                        <td> Panvel </td>
+                        <td> 22:30pm</td>
+                        <td>
+                            <p class="status delivered">Respond</p>
+                        </td>
+                        <tr>
+                            <td> 5 </td>
+                            <td> <img src="assets/images/alcohol.jpeg" alt="">Alcohol Sensed</td>
+                            <td> Yes </td>
+                            <td> Count:134 </td>
+                            <td>
+                                <p class="status delivered">Respond</p>
+                            </td>
+                  
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="assets/images/police.jpeg" alt=""> Nearby Police Sation </td>
+                        <td> Panvel ACMP </td>
+                        <td> 99874586926 </td>
+                        <td>
+                            <p class="status cancelled">Locate</p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td><img src="assets/images/ambu.jpeg" alt=""> Nearby Hospitals </td>
+                        <td> Purohit Hospital </td>
+                        <td> +212-07859595 </td>
+                        <td>
+                            <p class="status delivered">Locate</p>
+                        </td>
+                        
+                  
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="response.js"></script>
+
+</body>
+
+</html>
