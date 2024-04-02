@@ -1,3 +1,12 @@
+Emergency Response System
+Our System identifies the Vehicle Accident that occurs  and sends the alert signal in form of Inputs 1 & 0.
+It also detects the alcohol consumed that is it has a alcohol sensor that provides the value of alcohol if consumed.
+We've also created supported webpages for quick ambulances and police services.
+It also includes facility of sending victims information via pdf,excel or any other file to nearby emergency centres.
+We hope this project enhances the use of technology i.e Smart City.
+
+
+
 <div align="center">
   
   ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/tourly)
